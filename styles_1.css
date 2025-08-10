@@ -1,0 +1,20 @@
+/* Simple responsive styling */
+:root{--max:900px;--accent:#0b71ff;--bg:#f7f8fb;--text:#111}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;line-height:1.55;color:var(--text);margin:0;background:var(--bg)}
+.wrap{max-width:var(--max);margin:0 auto;padding:20px}
+.site-header{background:linear-gradient(90deg,#ffffff, #f0f6ff);border-bottom:1px solid rgba(0,0,0,0.04);padding:28px 0}
+.site-header h1{margin:0;font-size:26px}
+.tagline{color:#555;margin-top:6px}
+.content{display:grid;grid-template-columns:1fr 280px;gap:24px;padding:28px 0}
+article h2{color:var(--accent);margin-top:0}
+article h3{margin-bottom:6px}
+.meta{background:#fff;border-radius:8px;padding:16px;border:1px solid rgba(0,0,0,0.04)}
+.site-footer{border-top:1px solid rgba(0,0,0,0.04);padding:16px 0;margin-top:30px;background:#fff}
+.conclude{font-weight:600;margin-top:18px}
+
+/* Mobile */
+@media (max-width:720px){
+  .content{grid-template-columns:1fr; padding:12px 0}
+  .meta{order:2}
+}
